@@ -2,18 +2,28 @@ body{
   background-color: #FFFF99;
 }
 
+img {
+  max-width: 100%;
+}
+
 #container {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.mobile {
+  display: inline;
+}
+
+.desktop {
+  display: none;
+}
+
 header {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 0.2em;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 12px 12px 12px #404040;
+  border-radius: 0.5em;
   text-align: center;
 }
 
@@ -22,33 +32,51 @@ nav {
   font-size: 1.25em;
   font-weight: bold;
   text-align: center;
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  border-top: 5px solid #ffffff;
-  border-bottom: 5px solid #ffffff;
+}
+
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+nav li{
+    background-color: #009933;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+}
+
+nav li a{
+  color: #ffffff;
+  text-decoration: none;
 }
 
 main {
   display: block;
   font-family: Verdana, Arial, sans-serif;
   font-size: 1em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding:  20px;
-  border-radius: 10px;
+  margin-top: 0.5em;
+  padding:  1em;
+  border-radius: 1em;
   background-color:  #ffffff;
-  box-shadow: 12px 12px 12px #404040;
+  border-top: solid 0.2em #009933;
+  border-bottom: solid 0.2em #009933;
 }
+
 footer {
   font-size: .70em;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2em;
 }
+
+.tablet{
+  display: none;
+}
+
 .equip {
-  float: left;
-  padding-right: 20px;
+  display: none;
 }
 ul {
   margin-bottom: 50px;
