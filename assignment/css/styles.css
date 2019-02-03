@@ -1,0 +1,17 @@
+.ConsS{
+  display: inline;
+  height: 20em;
+  width: 90%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.label{
+  margin-left: 5%;
+}
+
+.ConsC{
+  float: right;
+  margin-right: 5%;
+}
