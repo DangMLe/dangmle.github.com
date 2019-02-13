@@ -7,6 +7,13 @@
   margin-right: 5%;
 }
 
+nav div{
+  display: inline-block;
+}
+span{
+  display: block;
+  text-align: center;
+}
 .label{
   margin-left: 5%;
 }
