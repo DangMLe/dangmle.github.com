@@ -116,6 +116,25 @@ aside {
   font-style: italic;
 }
 
+/* Style rule for input, select, and textarea form elements */
+input, select, textarea {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* Style rule for label element*/
+label{
+  display: block;
+}
+/* Style rule for unordered list within a form */
+form ul {
+  list-style-type: none;
+}
+/* Style rule for chkbx class */
+.chkbx {
+  display: inline-block;
+}
+
 /* Media query for tablet viewport targets screen size with a minimum width of 660px  */
 
 @media only screen and (min-width: 660px) {
@@ -264,6 +283,14 @@ aside {
     box-shadow: 1em 1em 1em #4C4F4D;
     padding: 1.5em;
     margin: 1em;
+  }
+
+  /**/
+  label{
+    float: left;
+    padding-right: 0.5em;
+    text-align: right;
+    width: 10em;
   }
 
 }
