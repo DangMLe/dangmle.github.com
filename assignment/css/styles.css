@@ -5,13 +5,34 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+main{
+display         : block;
+font-family     : Verdana, Arial, sans-serif;
+font-size       : 1em;
+margin-top      : 0.5em;
+padding         : 1em;
+background-color: #FFFFFF;
+opacity         : 0.85;
+}
+
+nav {
+  font-family     : Georgia, "Times New Roman", serif;
+  font-size       : 1.25em;
+  font-weight     : bold;
+  text-align      : center;
+  margin-top      : 0;
+}
 
 footer{
   clear:left;
   margin-top: 4em;
 }
 
-nav ul{
+nav li a{
+  text-decoration: none;
+}
+
+nav li{
   text-align: center;
   list-style: none;
 }
@@ -39,7 +60,8 @@ span{
   text-align: center;
 }
 label{
-  margin-left: 5%;
+  margin-left: 1em;
+  display: block;
 }
 
 .ConsC{
@@ -50,6 +72,18 @@ label{
 .about_main{
   text-align: center;
 }
+
+input, select, textarea {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.btn{
+  margin-left: 25em;
+}
+
+
 
 @media only screen and (min-width: 660px) {
   /* Style specifies a horizontal display for navigation links */
@@ -62,11 +96,24 @@ label{
     padding-right: 0;
     width: 18%;
     white-space: nowrap;
+    border-radius: 0;
+    background-color: transparent;
   }
 
   main{
     clear:left;
     margin-top: 4em;
+  }
+
+  label{
+    float: left;
+    padding-right: 0.5em;
+    text-align: right;
+    width: 10em;
+  }
+
+  .btn{
+    margin-left: 35em;
   }
 
 }
