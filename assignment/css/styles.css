@@ -201,6 +201,15 @@ input, select, textarea {
     margin-left: 1em;
     margin-right: 0;
   }
+  .consultbanner{
+    width: 95%;
+    height: 17em;
+  }
+  .Clabel{
+    float: none;
+    text-align: left;
+    margin-top: 0.5em;
+  }
   nav li {
     display: inline;
     float: right;
