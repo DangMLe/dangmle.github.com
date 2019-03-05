@@ -10,42 +10,46 @@
   <body>
 
     <header>
-      <a href="index.html"><img src="images/" alt="Web Development and Consulting">
+      <a href="index.html"><img src="images/Web Development.png" alt="Web Development and Consulting">
     </header>
 
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="consult.html">Consulting</a></li>
+        <li><a href="consult.html">Consult</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <h1>Please fill in the information</h1>
-    <form class="" action="post"><!-- Start Form -->
-      <label for="fName">First Name:</label>
-      <input type="text" name="fName" id="fName">
 
-      <label for="lName">Last Name:</label>
-      <input type="text" name="lName" id="lName">
-
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email">
-
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone">
-
-      <label for="company">Company:</label>
-      <input type="text" id="company" name="company">
-
-      <label for="require">Please describe your requirement</label>
-      <textarea id="require" name="require" rows="5" ></textarea>
-
-      <input type="submit" id="submit" value ="Submit" class="btn">
-
-    </form>
     <main>
+      <h2>Your business is damaged from small issues delays, and we can help you to change today. Get the most suitable system maintenance package for your applications now.</h2>
+      <p class="desktop">We ensure that your platform is secured, updated and performing at its best. Our super convenient pre-paid plan for maintenance a standalone or a group of websites, applications, will release you from unnecessary trouble with system maintenance, save time for core business activities and reduce costs from errors and lead-time.</p>
+      <h1>Please fill in the information</h1>
+      <form class="" action="custome.php" method="post"><!-- Start Form -->
+        <input type="hidden" value= "maintain" name= "request" id= "request">
 
+        <label for="fName" class="form">First Name:</label>
+        <input type="text" name="fName" id="fName">
+
+        <label for="lName" class="form">Last Name:</label>
+        <input type="text" name="lName" id="lName">
+
+        <label for="email" class="form">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="phone" class="form">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="company" class="form">Company:</label>
+        <input type="text" id="company" name="company">
+
+        <label for="require" class="form">Please describe your requirement</label>
+        <textarea id="require" name="require" rows="5" cols="50" ></textarea>
+
+        <input type="submit" id="submit" value ="Submit" class="btn">
+
+      </form>
     </main>
 
     <footer>

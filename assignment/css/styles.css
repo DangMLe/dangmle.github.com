@@ -2,17 +2,46 @@
   display: inline;
   width: 90%;
   float: left;
+  margin-top: 1em;
   margin-left: 5%;
   margin-right: 5%;
 }
+
+.service_desc{
+  display: none;
+}
+
+.desktop{
+  display: none;
+}
+
+.banner{
+  margin-left: 0;
+  width: 100%;
+  height: 10em;
+}
+
+img{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+body{
+  background-color: #87cefa;
+}
 main{
 display         : block;
-font-family     : Verdana, Arial, sans-serif;
+font-family     : Georgia, "Times New Roman", serif;
 font-size       : 1em;
 margin-top      : 0.5em;
 padding         : 1em;
 background-color: #FFFFFF;
 opacity         : 0.85;
+}
+
+.index{
+  height: 38em;
 }
 
 nav {
@@ -23,33 +52,91 @@ nav {
   margin-top      : 0;
 }
 
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 footer{
   clear:left;
-  margin-top: 4em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
+
 
 nav li a{
   text-decoration: none;
 }
 
 nav li{
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+    box-shadow: 3px 3px #9D9D93;
+}
+nav li:hover{
+  box-shadow: 4px 4px #4d4d4d;
+}
+nav li a:link{
+  color: #9D9D93;
+  font-style: italic;
+}
+nav li a:visited{
+  color: #4d4d4d;
+  font-style: italic;
+}
+h2{
   text-align: center;
-  list-style: none;
+  color: #4d4d4d;
+}
+h3{
+  font-weight: bold;
+  color: #9d9d93;
+  text-align: center;
 }
 .service_list{
   text-align: right;
   width: 95%;
-
 }
-.service_icon{
-  max-width: 50%;
+
+.service{
+  text-decoration: none;
+  font-weight: bold;
+  color: #4d4d4d;
+  font-style: italic;
+}
+.service:hover{
+  color: #1a1a1a;
+}
+.icon{
+ width:5em;
+ height: 5em;
+ margin-left: 0;
 }
 
 .service_item{
+  background-color: #e0ffff;
   display: block;
+  float: left;
   text-align: center;
+  width: 45%;
   margin-left: 1%;
   margin-right: 1%;
+  padding-left: 0.5em;
+  padding-right: 0;
+}
+
+.service_item_2{
+  background-color: #e0ffff;
+  display: block;
+  float: right;
+  text-align: center;
+  width: 45%;
+  margin-left: 1%;
+  margin-right: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -63,11 +150,14 @@ label{
   display: block;
 }
 
-.ConsC{
+#ConsC{
   float: right;
   margin-right: 5%;
 }
 
+.sumInfo{
+  overflow: hidden;
+}
 .about_main{
   text-align: center;
 }
@@ -78,22 +168,47 @@ input, select, textarea {
   margin-left: 1em;
 }
 
+#require{
+  width:27em;
+}
+
 .btn{
   margin-left: 25em;
 }
 
 
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 810px) {
   /* Style specifies a horizontal display for navigation links */
+  header{
+    float: left;
+  }
+
+  .desktop{
+    display: inline;
+  }
+
+  .banner{
+    height: 15em;
+  }
+
+  .service_desc{
+    display: inline;
+  }
+  img{
+    width:20em;
+    height: 5em;
+    margin-left: 1em;
+    margin-right: 0;
+  }
   nav li {
     display: inline;
-    float: left;
+    float: right;
     margin-left: 1%;
     margin-right: 1%;
     padding-left: 0;
     padding-right: 0;
-    width: 18%;
+    width: 5em;
     white-space: nowrap;
     border-radius: 0;
     background-color: transparent;
@@ -104,11 +219,18 @@ input, select, textarea {
     margin-top: 4em;
   }
 
+  .index{
+    height: 35em;
+  }
+
   label{
     float: left;
     padding-right: 0.5em;
     text-align: right;
-    width: 10em;
+  }
+
+  .form{
+    width:10em;
   }
 
   .btn{
@@ -126,7 +248,17 @@ input, select, textarea {
     margin: 10px auto;
     float: left;
     display: inline-block;
+    width: 17%;
+    margin-left: 2%;
+    text-align: center;
+  }
+  .service_item_2{
+    margin: 10px auto;
+    float: left;
+    display: inline-block;
     width: 10em;
+    margin-left: 5%;
+    margin-right: 3%;
     text-align: center;
   }
 }
